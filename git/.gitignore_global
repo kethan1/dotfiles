@@ -1,0 +1,14 @@
+# OS specific
+.DS_Store
+Thumbs.db
+
+# IDE/Editor specific
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# Dependencies and build artifacts
+node_modules/
+build/
+dist/
