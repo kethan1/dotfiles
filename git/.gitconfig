@@ -1,0 +1,9 @@
+[init]
+	defaultBranch = main
+[user]
+	name = Kethan Vegunta
+	email = kethan@vegunta.com
+[credential]
+	helper = /usr/share/doc/git/contrib/credential/libsecret/git-credential-libsecret
+[core]
+	edtior = vim
