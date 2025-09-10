@@ -3,4 +3,5 @@
 [include]
 	path = ~/.gitconfig.local
 [core]
-	edtior = vim
+	editor = vim
+	excludesfile = /home/kethan/.gitignore_global
