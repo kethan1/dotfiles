@@ -117,3 +117,6 @@ export PATH="$PATH:/home/kethan/.local/bin"
 
 # prevent user@host showing up for new tabs
 ZSH_THEME_TERM_TITLE_IDLE="%~"
+
+# https://wiki.archlinux.org/title/Kitty#Terminal_issues_with_SSH
+[ "$TERM" = "xterm-kitty" ] && alias ssh="kitty +kitten ssh"
