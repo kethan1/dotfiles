@@ -5,3 +5,9 @@
 [core]
 	editor = vim
 	excludesfile = /home/kethan/.gitignore_global
+[commit]
+	gpgsign = true
+[tag]
+	gpgSign = true
+[alias]
+	amend-date = "!f() { GIT_AUTHOR_DATE=\"$1\" GIT_COMMITTER_DATE=\"$1\" git commit --amend --date=\"$1\" --no-edit; }; f"

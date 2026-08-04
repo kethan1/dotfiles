@@ -112,9 +112,6 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
-# Created by `pipx` on 2025-08-31 03:25:35
-export PATH="$PATH:/home/kethan/.local/bin"
-
 # prevent user@host showing up for new tabs
 ZSH_THEME_TERM_TITLE_IDLE="%~"
 
@@ -126,3 +123,13 @@ ZSH_THEME_TERM_TITLE_IDLE="%~"
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
+export GPG_TTY=$(tty)
+
+bindkey '^H' backward-kill-word
+
+# opencode
+export PATH="$PATH:/home/kethan/develop/flutter/bin:/home/kethan/.local/bin:/home/kethan/.opencode/bin:/home/kethan/.spicetify"
+
+ZSH_AUTOSUGGEST_CLEAR_WIDGETS+=(bracketed-paste)
+
