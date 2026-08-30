@@ -115,10 +115,9 @@ source $ZSH/oh-my-zsh.sh
 # prevent user@host showing up for new tabs
 ZSH_THEME_TERM_TITLE_IDLE="%~"
 
-# https://wiki.archlinux.org/title/Kitty#Terminal_issues_with_SSH
-[ "$TERM" = "xterm-kitty" ] && alias ssh="kitty +kitten ssh"
-
 . /usr/share/autojump/autojump.sh
+
+ZSH_AUTOSUGGEST_CLEAR_WIDGETS+=(bracketed-paste)
 
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
@@ -128,8 +127,7 @@ export GPG_TTY=$(tty)
 
 bindkey '^H' backward-kill-word
 
-# opencode
-export PATH="$PATH:/home/kethan/develop/flutter/bin:/home/kethan/.local/bin:/home/kethan/.opencode/bin:/home/kethan/.spicetify"
+export PATH="$PATH:/home/kethan/.local/bin:/home/kethan/.spicetify"
 
-ZSH_AUTOSUGGEST_CLEAR_WIDGETS+=(bracketed-paste)
+. /home/kethan/develop/tools.sh
 
